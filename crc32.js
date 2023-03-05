@@ -95,7 +95,7 @@ function v2_crc16(data) {
   return crc;
 
 }
-function crc16(str) {
+function v3_crc16(str) {
 
   let crc = 0xFFFF;
 
@@ -115,23 +115,53 @@ function crc16(str) {
 
 }
 
- {
+function v4_crc16(data) {
 
-  
+  const POLY = 0x1021;
 
-  for (let i = 0; i < str.length; i++) {
+  let crc = 0xFFFF;
 
-    crc ^= str.charCodeAt(i);
+  for (let i = 0; i < data.length; i++) {
+
+    const byte = data.charCodeAt(i);
 
     for (let j = 0; j < 8; j++) {
 
-      crc = (crc & 1) ? ((crc >> 1) ^ 0xA001) : (crc >> 1);
+      const bit = ((byte << j) & 0x80) ^ ((crc & 0x8000) >> 8);
+
+      crc = (crc << 1) ^ (bit ? POLY : 0);
 
     }
 
-  }ī
+  }
 
-  return crc;
+  return crc & 0xFFFF;
+
+}
+
+  
+
+
+  
+
+   
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
 
 
 
