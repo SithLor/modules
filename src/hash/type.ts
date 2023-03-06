@@ -1,1 +1,0 @@
-type Hex = string

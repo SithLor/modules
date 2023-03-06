@@ -38,9 +38,6 @@ if (!String.prototype.padEnd) {
     }
   };
 }
-
-
-
 //Int8array
 if (typeof Int8Array === "undefined") {
   window.Int8Array = function (length) {

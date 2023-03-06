@@ -1,4 +1,4 @@
-export class CRC32 {
+class CRC32 {
     private table: Uint32Array;
     constructor() {
       console.log("LOADED")
@@ -13,7 +13,7 @@ export class CRC32 {
       }
     }
   
-    public compute(data: string,mode?:0|1|undefined): number {
+    public compute(data: string,mode?:0|1|undefined) {
       let crc = 0xffffffff;
       for (let i = 0; i < data.length; i++) {
         crc = this.table[(crc ^ data.charCodeAt(i)) & 0xff] ^ (crc >>> 8);
