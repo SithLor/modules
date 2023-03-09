@@ -21,6 +21,45 @@ class VerifyFileExtension {
     static IsWEBP(url: string): boolean {
         return /\.webp$/.test(url);
     }
+    static IsSVG(url: string): boolean {
+        return /\.svg$/.test(url);
+    }
+    static IsICO(url: string): boolean {
+        return /\.ico$/.test(url);
+    }
+    static IsTIFF(url: string): boolean {
+        return /\.tiff$/.test(url);
+    }
+    static IsPSD(url: string): boolean {
+        return /\.psd$/.test(url);
+    }
+    static IsRAW(url: string): boolean {
+        return /\.raw$/.test(url);
+    }
+    static IsHEIF(url: string): boolean {
+        return /\.heif$/.test(url);
+    }
+    static IsHEIC(url: string): boolean {
+        return /\.heic$/.test(url);
+    }
+    static IsAVIF(url: string): boolean {
+        return /\.avif$/.test(url);
+    }
+    static IsJXL(url: string): boolean {
+        return /\.jxl$/.test(url);
+    }
+    static IsJP2(url: string): boolean {
+        return /\.jp2$/.test(url);
+    }
+    static IsJPM(url: string): boolean {
+        return /\.jpm$/.test(url);
+    }
+    static IsJPF(url: string): boolean {
+        return /\.jpf$/.test(url);
+    }
+    static IsJXR(url: string): boolean {
+        return /\.jxr$/.test(url);
+    }
     //#endregion
     //#region VIDEO
     static IsVideo(url: string): boolean {
@@ -522,14 +561,8 @@ class VerifyFileExtension {
     static IsSQLITEDB3DB3DB(url: string): boolean {
         return /\.sqlitedb3db3db$/.test(url);
     }
-    static isTypeScript(url: string): boolean {
-        return /\.ts$/.test(url);
-    }
-    static isJavaScript(url: string): boolean {
-        return /\.js$/.test(url);
-    }
-    static isCoffeeScript(url: string): boolean {
-        return /\.coffee$/.test(url);
+    static isRuby(url: string): boolean {
+        return /\.rb$/.test(url); 
     }
     static isCSharp(url: string): boolean {
         return /\.cs$/.test(url);
@@ -540,12 +573,143 @@ class VerifyFileExtension {
     static isCPlusPlusHeader(url: string): boolean {
         return /\.hpp$/.test(url);
     }
-    static isJSX(url: string): boolean {
+    static IsKotlin(url: string): boolean {
+        return /\.kt$/.test(url);
+    }
+    static IsSwift(url: string): boolean {
+        return /\.swift$/.test(url);
+    }
+    static isGo(url: string): boolean {
+        return /\.go$/.test(url);
+    }
+    static isRust(url: string): boolean {
+        return /\.rs$/.test(url);
+    }
+    static isDart(url: string): boolean {
+        return /\.dart$/.test(url);
+    }
+    static isObjectiveC(url: string): boolean {
+        return /\.m$/.test(url);
+    }
+    static isObjectiveCPlusPlus(url: string): boolean {
+        return /\.mm$/.test(url);
+    }
+    static IsScala(url: string): boolean {
+        return /\.scala$/.test(url);
+    }
+    static isHaskell(url: string): boolean {
+        return /\.hs$/.test(url);
+    }
+    static isErlang(url: string): boolean {
+        return /\.erl$/.test(url);
+    }
+    static isElixir(url: string): boolean {
+        return /\.ex$/.test(url);
+    }
+    static isClojure(url: string): boolean {
+        return /\.clj$/.test(url);
+    }
+    static isFSharp(url: string): boolean {
+        return /\.fs$/.test(url);
+    }
+    static isLisp(url: string): boolean {
+        return /\.lisp$/.test(url);
+    }
+    static isLua(url: string): boolean {
+        return /\.lua$/.test(url);
+    }
+    static isJulia(url: string): boolean {
+        return /\.jl$/.test(url);
+    }
+    static isR(url: string): boolean {
+        return /\.r$/.test(url);
+    }
+    static isRacket(url: string): boolean {
+        return /\.rkt$/.test(url);
+    }
+    static isOCaml(url: string): boolean {
+        return /\.ml$/.test(url);
+    }
+    static isOCamlInterface(url: string): boolean {
+        return /\.mli$/.test(url);
+    }
+    static isC(url: string): boolean {
+        return /\.c$/.test(url);
+    }
+    static isCHeader(url: string): boolean {
+        return /\.h$/.test(url);
+    }
+    static isJava(url: string): boolean {
+        return /\.java$/.test(url);
+    }
+    static isPython(url: string): boolean {
+        return /\.py$/.test(url);
+    }
+    static isPyhtonCompiled(url: string): boolean {
+        return /\.pyc$/.test(url);
+    }
+    static isPHP(url: string): boolean {
+        return /\.php$/.test(url);
+    }
+    static isPerl(url: string): boolean {
+        return /\.pl$/.test(url);
+    }
+    static IsJavsScriptModule(url: string): boolean {
+        return /\.mjs$/.test(url);
+    }
+    static IsTypeScriptModule(url: string): boolean {
+        return /\.mts$/.test(url);
+    }
+    static isTypeScript(url: string): boolean {
+        return /\.ts$/.test(url);
+    }
+    static isJavaScript(url: string): boolean {
+        return /\.js$/.test(url);
+    }
+    static isJavaSrciptXML(url: string): boolean {
         return /\.jsx$/.test(url);
     }
-    static isTSX(url: string): boolean {
+    static isTypeScriptXML(url: string): boolean {
         return /\.tsx$/.test(url);
+    }
+    static IsJavaScriptComplied(url: string): boolean {
+        return /\.jsc$/.test(url);
+    }
+    static isJavaScriptMinified(url: string): boolean {
+        return /\.min.js$/.test(url);
+    }
+    static isTypeScriptMinified(url: string): boolean {
+        return /\.min.ts$/.test(url);
+    }
+    static isCoffeeScriptMinified(url: string): boolean {
+        return /\.min.coffee$/.test(url);
+    }
+    static isJavaScriptMapMinified(url: string): boolean {
+        return /\.min.js.map$/.test(url);
+    }
+    static isTypeScriptMapMinified(url: string): boolean {
+        return /\.min.ts.map$/.test(url);
+    }
+    static isCoffeeScriptMapMinified(url: string): boolean {
+        return /\.min.coffee.map$/.test(url);
+    }
+    static isCoffeeScript(url: string): boolean {
+        return /\.coffee$/.test(url);
+    }
+    static isCoffeeScriptMap(url: string): boolean {
+        return /\.coffee.map$/.test(url);
+    }
+    static isJavaScriptMap(url: string): boolean {
+        return /\.js.map$/.test(url);
+    }
+    static isTypeScriptMap(url: string): boolean {
+        return /\.ts.map$/.test(url);
+    }
+    static IsMarkdown(url: string): boolean {
+        return /\.md$/.test(url);
     }
     //#endregion
 }
+
 export default VerifyFileExtension
+//write a test for this

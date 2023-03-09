@@ -1,5 +1,11 @@
-
-export default function ObjectFreeze(target: any, key: string, descriptor: PropertyDescriptor) {
+/**
+ * Freeze A calss or method or property
+ * @param target 
+ * @param key 
+ * @param descriptor 
+ * @returns 
+ */
+export default function Freeze(target: any, key: string, descriptor: PropertyDescriptor) {
     const method = descriptor.value;
     descriptor.value = function (...args: any[]) {
         const result = method.apply(this, args);
