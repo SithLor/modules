@@ -713,3 +713,4 @@ class VerifyFileExtension {
 
 export default VerifyFileExtension
 //write a test for this
+VerifyFileExtension.
